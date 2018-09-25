@@ -323,3 +323,29 @@ section .heading h2 {
     color: #d82c2e;
     font-style: italic;
 }
+
+/*----- Footer -----*/
+
+footer {
+    background: #333;
+    padding: 20px 40px;
+}
+
+footer h5 {
+    color: #fff;
+    font-weight: normal;
+}
+
+footer .glyphicon {
+    font-size: 25px;
+    margin: 20px;
+    height: 30px;
+    color: #d82c2e;
+}
+
+footer .glyphicon:hover {
+    font-size: 28px;
+    margin: 20px;
+    height: 30px;
+    color: #d82c2e;
+}
