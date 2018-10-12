@@ -45,6 +45,25 @@ section .heading h2 {
     margin: 0 auto;
 }
 
+.button1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+
+.button1:hover {
+    background: #fff;
+    color: #d82c2e;
+    text-decoration: none;
+}
+
 /*----- Menu -----*/
 
 .navbar {
@@ -107,24 +126,6 @@ section .heading h2 {
 
 #about .heading h3 {
     color: #000;
-}
-
-.button1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    border: 1px solid #fff;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 18px 50px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in 0s;
-}
-
-.button1:hover {
-    background: #fff;
-    color: #d82c2e;
-    text-decoration: none;
 }
 
 /*----- Skills -----*/
