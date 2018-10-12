@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" style="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" style="text/css" href="./style.css">
-    <title>CV Seb</title>
+    <title>CV Bootstrap 3.3.6</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -29,6 +29,7 @@
                         <li><a href="#education">Éducation</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#recommandations">Recommandations</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +43,7 @@
         <div class="heading">
             <h1>Hello, c'est moi Seb!</h1>
             <h3>Développeur Web</h3>
-            <a href="./docs/CV-JOHN.pdf" class="button1">Télécharger mon CV</a>
+            <a href="#" class="button1">Télécharger mon CV</a>
         </div>
     </section>
 
@@ -272,6 +273,55 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Contact</h2>
+            </div>
+                
+           <div class="row">
+               <div class="col-lg-10 col-lg-offset-1">
+                    <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom <span class="white-stars">*</span></label>
+                                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name">Nom <span class="white-stars">*</span></label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="white-stars">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message <span class="white-stars">*</span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="white-stars"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="button1" value="Envoyer">
+                            </div>    
+                        </div>
+                    </form>
+                </div>
+           </div>
         </div>
     </section>
 
