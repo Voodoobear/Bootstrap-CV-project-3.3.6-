@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" style="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" style="text/css" href="./style.css">
-    <title>CV Seb</title>
+    <title>CV Bootstrap 3.3.6</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -29,6 +29,7 @@
                         <li><a href="#education">Éducation</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#recommandations">Recommandations</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,7 +43,7 @@
         <div class="heading">
             <h1>Hello, c'est moi Seb!</h1>
             <h3>Développeur Web</h3>
-            <a href="./docs/CV-JOHN.pdf" class="button1">Télécharger mon CV</a>
+            <a href="https://web-tool-box.com/docs/cv_dev_web_2018.pdf" class="button1">Télécharger mon CV</a>
         </div>
     </section>
 
@@ -185,10 +186,10 @@
                     <div class="education-block">
                         <h5>2007</h5>
                         <span class="glyphicon glyphicon-education"></span>
-                        <h3>Apprendre-a-coder.com</h3>
-                        <h4>Formation online "Développeur Web"</h4>
+                        <h3>OpenClassrooms</h3>
+                        <h4>Formation online "Développeur intégrateur en réalisation d'application web"</h4>
                         <div class="red-divider"></div>
-                        <p>HTML/CSS, Javascript, JQuery</p>
+                        <p>HTML/CSS, Javascript, JQuery, PHP, SQL...</p>
                         <p>Responsive Design</p>
                     </div>
                 </div>
@@ -254,11 +255,11 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
                         <h3>Larry Page, Google Co-Founder</h3>
-                        <h4>"John t'es le meilleur! Merci pour tout..."</h4>
+                        <h4>"Seb t'es le meilleur! Merci pour tout..."</h4>
                     </div>
                     <div class="item">
                         <h3>Mark Zuckerberg, Facebook Founder and CEO</h3>
-                        <h4>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h4>
+                        <h4>"Merci Seb de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h4>
                     </div>
                     <div class="item">
                         <h3>Jack Dorsey, Twitter Founder and CEO</h3>
@@ -275,11 +276,60 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="container">
+            <div class="white-divider"></div>
+            <div class="heading">
+                <h2>Contact</h2>
+            </div>
+                
+           <div class="row">
+               <div class="col-lg-10 col-lg-offset-1">
+                    <form id="contact-form" method="post" action="" role="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="firstname">Prénom <span class="white-stars">*</span></label>
+                                <input id="firstname" type="text" name="firstname" class="form-control" placeholder="Votre prénom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="name">Nom <span class="white-stars">*</span></label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Votre Nom">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email">Email <span class="white-stars">*</span></label>
+                                <input id="email" type="text" name="email" class="form-control" placeholder="Votre Email">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone">Téléphone</label>
+                                <input id="phone" type="tel" name="phone" class="form-control" placeholder="Votre Téléphone">
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message">Message <span class="white-stars">*</span></label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Votre Message" rows="4"></textarea>
+                                <p class="comments"></p>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="white-stars"><strong>* Ces informations sont requises.</strong></p>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="button1" value="Envoyer">
+                            </div>    
+                        </div>
+                    </form>
+                </div>
+           </div>
+        </div>
+    </section>
+
     <footer class="text-center">
         <a href="#about">
             <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <h5> Copyright 2018 Sébastien Camberou</h5>
+        <h5> Copyright <script>Date.getFullYear();</script> Sébastien Camberou</h5>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
